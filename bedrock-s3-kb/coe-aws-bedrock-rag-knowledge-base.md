@@ -47,7 +47,7 @@ Before creating the knowledge base, the user needs an S3 bucket where the source
 2. Click **Create bucket**, assign a name, and choose a region.
 3. Upload the documents that will serve as the knowledge base source.
 
-<video controls src="./20260430-1646-08.2142818.mp4" title="Title"></video>
+<video controls src="./media/20260430-1646-08.2142818.mp4" title="Title"></video>
 
 ---
 
@@ -57,7 +57,7 @@ Before creating the knowledge base, the user needs an S3 bucket where the source
 2. In the left navigation panel, select **Knowledge Bases**.
 3. Click the **Create** dropdown and choose **Knowledge Base with vector store**.
 
-![alt text](./image-2.png)
+![alt text](./media/image-2.png)
 
 4. On the **Knowledge Base details** page:
    - Enter a descriptive **name** and optional **description**.
@@ -67,7 +67,7 @@ Before creating the knowledge base, the user needs an S3 bucket where the source
 
 5. Click **Next**.
 
-<video controls src="./20260430-1640-40.7129958.mp4" title="Title"></video>
+<video controls src="./media/20260430-1640-40.7129958.mp4" title="Title"></video>
 
 ---
 
@@ -78,7 +78,7 @@ This step tells Bedrock where the documents are and how to process them.
 1. Assign a name to the data source.
 2. Under **Data source location**, select whether the S3 bucket belongs to the current account or another, then enter the bucket path.
 
-<video controls src="./20260430-1706-38.9865470.mp4" title="Title"></video>
+<video controls src="./media/20260430-1706-38.9865470.mp4" title="Title"></video>
 
 3. Choose a **Parsing Strategy**:
    - `Amazon Bedrock default parser` — for plain text documents (free).
@@ -107,7 +107,7 @@ This step defines how text is transformed into vectors and where those vectors a
    **Option A — Quick Create (Recommended)**
    Bedrock automatically creates a new S3 vector bucket and index. This is the simplest option for most users.
 
-<video controls src="./20260430-1727-54.7868990.mp4" title="Title"></video>
+<video controls src="./media/20260430-1727-54.7868990.mp4" title="Title"></video>
 
    **Option B — Use an Existing Vector Store**
    If an S3 Vector bucket and index already exist, they can be connected here by providing the **S3 Vector bucket ARN** and **vector index ARN**.
@@ -126,7 +126,7 @@ This step defines how text is transformed into vectors and where those vectors a
    )
 ```
 
-<video controls src="./20260430-1730-25.1912247.mp4" title="Title"></video>
+<video controls src="./media/20260430-1730-25.1912247.mp4" title="Title"></video>
 
 3. Click **Next**, review the configuration, and click **Create Knowledge Base**.
 
@@ -139,7 +139,7 @@ Once the knowledge base is created, the data source must be synchronized. This i
 1. Open the newly created Knowledge Base from the Bedrock console.
 2. Find the configured data source and click **Sync**.
 
-![alt text](./image-5.png)
+![alt text](./media/image-5.png)
 
 During sync, Bedrock will:
 - Parse and chunk the documents.
@@ -164,7 +164,7 @@ Two testing modes are available:
 | **Retrieve Only** | Returns the raw document chunks most relevant to the query, along with relevance scores. |
 | **Retrieve and Generate** | Uses a foundation model (e.g., Amazon Nova) to generate a full answer based on retrieved chunks. |
 
-![alt text](./image-6.png)
+![alt text](./media/image-6.png)
 
 Additional query settings can be configured:
 - **Metadata Filters** — Narrow results by document attributes (date, category, source).
@@ -172,7 +172,7 @@ Additional query settings can be configured:
 - **Reranking** — Improve result relevance ordering.
 - **Query Modification** — Adjust how user queries are interpreted.
 
-![alt text](./image-7.png)
+![alt text](./media/image-7.png)
 
 ---
 

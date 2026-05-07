@@ -102,15 +102,15 @@ To create a new knowledge base, follow these steps:
 
 0. Create an S3 bucket before using on Bedrock:
 
-<video controls src="20260430-1646-08.2142818.mp4" title="Title"></video>
+<video controls src="./media/20260430-1646-08.2142818.mp4" title="Title"></video>
 
 1. On the Amazon Bedrock console in the left navigation pane, choose Knowledge Bases. To initiate the creation process, in the Create dropdown list, choose Knowledge Base with vector store.
 
-![alt text](image-2.png)
+![alt text](./media/image-2.png)
 
 2. On the Provide Knowledge Base details page, enter a descriptive name for your knowledge base and an optional description to identify its purpose. Select your IAM permissions approach—either create a new service role or use an existing one—to grant the necessary permissions for accessing AWS services.
 
-<video controls src="20260430-1640-40.7129958.mp4" title="Title"></video>
+<video controls src="./media/20260430-1640-40.7129958.mp4" title="Title"></video>
 
 3. Choose Amazon S3. Optionally, add tags to help organize and categorize your resources and configure log delivery destinations such as an Amazon S3 bucket or Amazon CloudWatch for monitoring and troubleshooting.
 
@@ -126,7 +126,7 @@ To configure the data source:
 
 2. In Data source location, select whether the S3 bucket exists in your current AWS account or another account, then specify the location where your documents are stored.
 
-<video controls src="20260430-1706-38.9865470.mp4" title="Title"></video>
+<video controls src="./media/20260430-1706-38.9865470.mp4" title="Title"></video>
 
    Configure your parsing strategy to determine how Amazon Bedrock processes your documents. Select Amazon Bedrock default parser for text-only documents at no additional cost. Select Amazon Bedrock Data Automation as parser or Foundation models as a parser for processing complex documents with visual elements.
 
@@ -165,7 +165,7 @@ The quick create option is the recommended approach for most users, automaticall
 
 This recommended option automatically creates an S3 vector bucket in your account during knowledge base creation. The system optimizes your vector storage for cost-effective, durable storage of large-scale vector datasets.
 
-<video controls src="20260430-1727-54.7868990.mp4" title="Title"></video>
+<video controls src="./media/20260430-1727-54.7868990.mp4" title="Title"></video>
 
 
 **Using an Existing Vector Store**
@@ -194,7 +194,7 @@ s3vectors.create_index(
 
 After you have an S3 Vector bucket and index, you can connect it to your knowledge base. You'll need to provide both the S3 Vector bucket Amazon Resource Name (ARN) and vector index ARN to correctly link your knowledge base to your existing S3 Vector index.
 
-<video controls src="20260430-1730-25.1912247.mp4" title="Title"></video>
+<video controls src="./media/20260430-1730-25.1912247.mp4" title="Title"></video>
 
 ---
 
@@ -205,7 +205,7 @@ After configuring your knowledge base with S3 Vectors, you need to synchronize y
 
 From the Amazon Bedrock Knowledge Bases console, open your created knowledge base and locate your configured data source and choose Sync to initiate the process.
 
-![alt text](image-5.png)
+![alt text](./media/image-5.png)
 
 During synchronization, the system processes your documents according to your parsing and chunking configurations, generates embeddings using your selected model, and stores them in your Amazon S3 vector index.
 
@@ -224,7 +224,7 @@ You can use this interactive console to experiment with different query types an
 
 The testing interface provides valuable insights into how your knowledge base processes queries, displaying source chunks, their relevance scores, and associated metadata.
 
-![alt text](image-6.png)
+![alt text](./media/image-6.png)
 
 **Configuring Query Settings and Optimization**
 
@@ -248,7 +248,7 @@ These tools help optimize retrieval quality and make sure the most relevant info
 
 Using this hands-on validation, you can refine your configuration before integrating the knowledge base with production applications.
 
-![alt text](image-7.png)
+![alt text](./media/image-7.png)
 
 ---
 
